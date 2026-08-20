@@ -88,8 +88,31 @@ public class ToDoListProfessor {
                         
                         System.out.println("Tarefa concluida com sucesso!");
                     }else{
-                        System.out.println("Tarefa inválida");
+                        System.out.println("Tarefa invalida!");
                     }
+                case 4:
+                    System.out.println("Digite o numero da tarefa que deseja excluir: ");
+                    int numeroExcluir = scanner.nextInt();
+                    
+                    int indiceExcluir = numeroExcluir - 1;
+                    
+                    if (indiceExcluir >= 0 && indiceExcluir < tarefas.length && tarefas[indiceExcluir] != null){
+                        
+                        tarefas[indiceExcluir] = null;
+                        concluidas[indiceExcluir] = false;
+                        
+                        System.out.println("Tarefa excluida com sucesso!");
+                        
+                    }else{
+                        System.out.println("Tarefa invalida!");
+                    }
+                    
+                    break;
+                case 5:
+                    System.out.println("Programa encerradp. Até mais!");
+                    
+                    break;
+                  
             }
         }
     }
