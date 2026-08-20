@@ -109,7 +109,11 @@ public class ToDoListProfessor {
                     
                     break;
                 case 5:
-                    System.out.println("Programa encerradp. Até mais!");
+                    System.out.println("Programa encerrado. Até mais!");
+                    
+                    break;
+                default:
+                    System.out.println("Opcao inválida!");
                     
                     break;
                   
